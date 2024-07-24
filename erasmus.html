@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Computer Science life</title>
+        <style>
+            * {box-sizing: border-box;}
+            body {font-family: Verdana, sans-serif;
+            background-image: url(images/erasmus.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;}
+            .mySlides {display: none;}
+            img {vertical-align: middle;}
+            
+
+            .slideshow-container {
+              max-width: 1000px;
+              position: relative;
+              margin: auto;
+            }
+            
+            .text {
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+            }
+            
+     
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+            
+            .dot {
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+            
+            .active {
+              background-color: #717171;
+            }
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            
+            @-webkit-keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            @media only screen and (max-width: 300px) {
+              .text {font-size: 11px}
+            }
+            </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <a href="" class="navbar-brand">Computer Science</a>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="erasmus.html" class="nav-link">Erasmus</a></li>
+                    <li class="nav-item"><a href="whatwelearn.html" class="nav-link">What We Learn</a></li>
+                </ul>
+            </div>
+        </nav>
+            
+            <h2 style="color:black; margin-top: 150px;"  >Erasmus +</h2>
+
+            <p style="color: black; margin-top: 85px;">Universum College has 78 Credit Mobility agreements and 9 active Capacity Building in the Field of Higher Education projects. Our institution has more KA1 and KA2 projects than the majority of HEIs in Kosovo, combined.
+
+                Internationalization of our university remains as one of our academic and professional priorities. As a part of our policy we consistently update our internationalization strategies in order to optimize the mechanisms that facilitate professional exchanges amongst staff and students. Hence, we are always looking forward to establish cooperation with respective institutions across Europe and beyond. Universum College is recognized as the most internationalized institution in Kosovo. This subsequently has resulted from the ever increasing number of students and staff whom have obtained international experience by participating in exchange activities, projects as well as joint partnerships with various institutions worldwide. With three different innovative campuses in the most dynamic and attractive cities in Kosovo, Universum College has always been the number one selection of both native and international students. Hence, we strive to keep our trophy and consistently look for new partners and cooperating institutions.</p>
+            
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/e1.jpg" style="width:100%">
+              <div class="text">Erasmus +</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/e2.jpg" style="width:100%">
+              <div class="text">Erasmus +</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/e3.jpg.png" style="width:100%">
+              <div class="text">Erasmus +</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2500);
+            }
+            </script> 
+        <footer>
+            <a href="https://www.universum-ks.org/">Kolegji Universum</a>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/jsbootstrap.min.js"></script>
+    </body>
+</html>
